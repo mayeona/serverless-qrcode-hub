@@ -3,6 +3,13 @@ name = "viaq"
 main = "index.js"
 compatibility_date = "2025-09-15"
 
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
 [[d1_databases]]
 # Worker 脚本中访问资源的变量名
 binding = "DB"
